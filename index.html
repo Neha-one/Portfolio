@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha - Web Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(4, 4, 29);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(21, 21, 65);
+            height: 55px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            /* font-size: 0.8rem; */
+            margin: 0 23px;
+        }
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 0.93rem;
+            color: rgb(153, 153, 226);
+        }
+
+        .right {
+            font-size: 0.9rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 60px 0;
+            align-items: center;
+
+        }
+
+        .leftsection {
+            /* background-color: red; */
+            width: 40%;
+            font-size: 2.5rem;
+            /* display: flex;
+            flex-direction: column;
+            align-content: center; */
+        }
+
+        .rightsection {
+            /* background-color: red; */
+            width: 30%;
+        }
+
+        .rightsection img {
+            width: 90%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(170, 160, 228);
+            font-weight: 500;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 160, 228);
+        }
+
+        /* .formalimg img {
+            width: 35%;
+            margin: 0 30px;
+            
+        } */
+        main hr {
+            border: 2px;
+            height: 2px;
+            margin: 0 84px;
+            margin-bottom: 34px;
+            /* margin: auto; */
+            background-color: rgb(61, 53, 104);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .horizontal-line {
+            width: 80vw;
+            background-color: white;
+            height: 2px;
+            margin: 72px 0;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-between; */
+        }
+
+        .vertical-line {
+            height: 19px;
+            width: 2px;
+            background-color: white;
+            margin: 0 98px;
+
+        }
+
+        .imgtop {
+            width: 3rem;
+            position: relative;
+            left: -22px;
+            top: -50px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: -26px;
+            left: -28px;
+            font-size: 1rem;
+            color: #fdfdff;
+        }
+
+
+        .desc {
+            position: relative;
+            top: -15px;
+            left: -39px;
+            font-size: 0.7rem;
+            color: gray;
+            width: 9vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Neha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Contact</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+
+            <div class="leftsection">
+                <!-- <div class="formalimg"> <img src="neha fomal picture.png" alt=""></div> -->
+                Hi, My name is
+                <span class="purple">Neha</span>
+                <div>And i am a passionate </div>
+                <!-- <div>web developer</div> -->
+                <span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="neha fomal picture.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">what i have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="horizontal-line">
+
+                <div class="vertical-line">
+                    <img class="imgtop" src="software-engineering-programmer-logo-concept-png.webp" alt="">
+                    <div class="vertical-title">HTML Developer</div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt unde perspiciatis
+                        explicabo atque sint dolore, cumque earum fuga hic dolorem veniam adipisci modi quo quod sit
+                        quasi ipsum at aperiam natus facilis accusantium.</div>
+                </div>
+                <div class="vertical-line">
+                    <img class="imgtop" src="software-engineering-programmer-logo-concept-png.webp" alt="">
+                    <div class="vertical-title">Node.js Developer</div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellendus
+                        distinctio accusantium dignissimos animi rerum voluptas quos omnis eum sint, nisi impedit
+                        deleniti, qui natus dolore quidem iusto laboriosam quas accusamus mollitia possimus?</div>
+                </div>
+                <div class="vertical-line">
+                    <img class="imgtop" src="software-engineering-programmer-logo-concept-png.webp" alt="">
+                    <div class="vertical-title">Database handler</div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laboriosam distinctio
+                        optio, error similique numquam, temporibus quia neque nesciunt corrupti officiis dignissimos
+                        fugiat, id natus deleniti maxime modi? Sapiente eveniet nisi dicta illum?</div>
+                </div>
+                <div class="vertical-line">
+                    <img class="imgtop" src="software-engineering-programmer-logo-concept-png.webp" alt="">
+                    <div class="vertical-title">frontend developer</div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium rerum ipsum
+                        consequatur! Dicta nobis odio harum tenetur obcaecati error beatae ad, esse sapiente ipsum,
+                        voluptate facere ex magni cumque, magnam recusandae quo similique?</div>
+                </div>
+                <div class="vertical-line">
+                    <img class="imgtop" src="software-engineering-programmer-logo-concept-png.webp" alt="">
+                    <div class="vertical-title">fullStack developer</div>
+                    <div class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam, odio
+                        dolores repellat temporibus ab similique natus saepe quisquam suscipit? Totam dolorem nam
+                        officiis, earum, fugit vel obcaecati aspernatur mollitia facilis alias eaque.</div>
+                </div>
+                <div class="vertical-line">
+                    <img class="imgtop" src="software-engineering-programmer-logo-concept-png.webp" alt="">
+                    <div class="vertical-title">fullStack developer</div>
+                    <div class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam, odio
+                        dolores repellat temporibus ab similique natus saepe quisquam suscipit? Totam dolorem nam
+                        officiis, earum, fugit vel obcaecati aspernatur mollitia facilis alias eaque.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Problem Solver'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
