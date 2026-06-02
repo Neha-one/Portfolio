@@ -115,12 +115,12 @@
         }
 
         .secondsection {
-            max-width: 80vw;
+            max-width: 90vw;
             margin: auto;
             height: 80vh;
         }
 
-        .secondsection h1 {
+        /* .secondsection h1 {
             font-size: 1.9rem;
         }
 
@@ -131,7 +131,6 @@
             margin: 72px 0;
             display: flex;
             flex-direction: row;
-            /* justify-content: space-between; */
         }
 
         .vertical-line {
@@ -165,6 +164,50 @@
             font-size: 0.7rem;
             color: gray;
             width: 9vw;
+        } */
+
+        .mainbox {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .frontendbox,
+        .backendbox,
+        .toolsbox,
+        .languagebox {
+            background-color: rgb(21, 21, 65);
+            /* width: 45%; */
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+
+        .frontendbox li,
+        .backendbox li,
+        .toolsbox li,
+        .languagebox li {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(61, 53, 104);
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .iconimg {
+            width: 38px;
+            margin-right: 10px;
+        }
+        .boxname{
+            margin-bottom: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -196,24 +239,24 @@
 
             </div>
             <div class="rightsection">
-                <img src="neha fomal picture.png" alt="">
+                <img src="assets/neha fomal picture.png" alt="">
             </div>
         </section>
         <hr>
-        <section class="secondsection">
+        <!-- <section class="secondsection">
             <span class="text-gray">what i have done so far</span>
             <h1>Work Experience</h1>
             <div class="horizontal-line">
 
                 <div class="vertical-line">
-                    <img class="imgtop" src="software-engineering-programmer-logo-concept-png.webp" alt="">
+                    <img class="imgtop" src="assets/image.png" alt="">
                     <div class="vertical-title">HTML Developer</div>
                     <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt unde perspiciatis
                         explicabo atque sint dolore, cumque earum fuga hic dolorem veniam adipisci modi quo quod sit
                         quasi ipsum at aperiam natus facilis accusantium.</div>
                 </div>
                 <div class="vertical-line">
-                    <img class="imgtop" src="software-engineering-programmer-logo-concept-png.webp" alt="">
+                    <img class="imgtop" src="assets/software-engineering-programmer-logo-concept-png.webp" alt="">
                     <div class="vertical-title">Node.js Developer</div>
                     <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellendus
                         distinctio accusantium dignissimos animi rerum voluptas quos omnis eum sint, nisi impedit
@@ -248,6 +291,89 @@
                         officiis, earum, fugit vel obcaecati aspernatur mollitia facilis alias eaque.</div>
                 </div>
             </div>
+        </section> -->
+        <section class="secondsection">
+            <h2>Skills</h2>
+            <div class="mainbox">
+                <div class="frontendbox">
+                    <h3 class="boxname">Frontend</h3>
+                    <ul>
+                        <li>
+                            <img class="iconimg" src="assets/html.png" alt="">
+                            Html
+                        </li>
+                        <li>
+                            <img class="iconimg" src="assets/css.png" alt="">
+                            css
+                        </li>
+                        <li>
+                            <img src="assets/js.png" alt="" class="iconimg">
+                            js
+                        </li>
+                        <li>
+                            <img src="assets/tailwindcss.png" alt="" class="iconimg">
+                            tailwindcss
+                        </li>
+                        <li>
+                            <img src="assets/react.png" alt="" class="iconimg">
+                            react
+                        </li>
+                        <li>
+                            <img src="assets/bootstrap.png" alt="" class="iconimg">
+                            bootstrap
+                        </li>
+                    </ul>
+                </div>
+                <div class="backendbox">
+                    <h3 class="boxname">Backend</h3>
+
+                    <ul>
+                        <li>
+                            <img class="iconimg" src="assets/node.png" alt="">
+                            nodejs
+                        </li>
+                        <li>
+                            <img class="iconimg" src="assets/ex.png" alt="">
+                            express
+                        </li>
+                        <li>
+                            <img class="iconimg" src="assets/mongodb.png" alt="">
+                            mongodb
+                        </li>
+                        <li><img class="iconimg" src="assets/mysql.png" alt="">
+                            mysql</li>
+
+                    </ul>
+                </div>
+                <div class="toolsbox">
+                    <h3 class="boxname">Tools</h3>
+
+                    <ul>
+                        <li>
+                            <img class="iconimg" src="assets/tools/git.png" alt=""> git
+                        </li>
+                        <li><img class="iconimg" src="assets/tools/github.png" alt=""> github</li>
+
+                        <li><img class="iconimg" src="assets/tools/postman.png" alt="">postman</li>
+                        <li><img class="iconimg" src="assets/tools/vs code.png" alt="">vscode</li>
+                        <li><img class="iconimg" src="assets/tools/figma.png" alt="">figma</li>
+                        <li><img class="iconimg" src="assets/tools/mongodb.png" alt="">compass</li>
+                        <li><img class="iconimg" src="assets/tools/npm.png" alt="">npm</li>
+                    </ul>
+                </div>
+                <div class="languagebox">
+                    <h3 class="boxname">Languages</h3>
+
+                    <ul>
+                        <li><img class="iconimg" src="assets/languages/c.png" alt="">
+                            C</li>
+                        <li><img class="iconimg" src="assets/languages/python.png" alt="">Python</li>
+                        <li><img class="iconimg" src="assets/languages/js.png" alt="">javascript</li>
+                        <li><img class="iconimg" src="assets/languages/cpp.png" alt="">c++</li>
+                    </ul>
+                </div>
+            </div>
+
         </section>
     </main>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
