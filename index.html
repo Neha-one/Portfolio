@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neha - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+    </style>
     <style>
         * {
             margin: 0;
@@ -24,10 +28,14 @@
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             background-color: rgb(21, 21, 65);
             height: 55px;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            top: 0;
         }
 
         nav ul {
@@ -37,27 +45,48 @@
 
         nav ul li {
             list-style: none;
-            /* font-size: 0.8rem; */
             margin: 0 23px;
+            font-size: 0.9rem;
         }
 
 
         nav ul li a {
             text-decoration: none;
             color: white;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #ff004f;
+            left: 0;
+            bottom: -6px;
+            transition: 0.4s;
+
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
         }
 
         nav ul li a:hover {
-            font-size: 0.93rem;
-            color: rgb(153, 153, 226);
-        }
-
-        .right {
-            font-size: 0.9rem;
+            color: rgb(153, 226, 209);
+            font-size: 0.98rem;
         }
 
         .left {
             font-size: 1.5rem;
+            font-family: "Dancing Script", cursive;
+            margin-left: 20px;
+
+        }
+
+        .socialicons {
+            margin-right: 1rem;
+
         }
 
         .firstsection {
@@ -271,8 +300,24 @@
 
         .fourthsection {
             display: flex;
+            flex-direction: row;
+            gap: 40px;
+            max-width: 900px;
+            margin: auto;
+            /* margin-top: 50px; */
+            justify-content: space-around;
+            align-items: flex-start;
+
+        }
+
+        .leftcontact {
+            width: 40%;
+            display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: baseline;
+            margin-top: 50px;
+
+
         }
 
         .contact {
@@ -303,6 +348,14 @@
             color: white;
 
         }
+
+        /* ---------------footer------------------ */
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: rgb(150, 145, 178);
+            font-size: 0.7rem;
+        }
     </style>
 </head>
 
@@ -318,6 +371,18 @@
                     <li><a href="/">Projects</a></li>
                 </ul>
             </div>
+            <div class="socialicons">
+                <span>
+                    <a href="https://github.com/Neha-one"><img src="assets/tools/github.png" alt="github"
+                            class="iconimg"></a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/in/neha-baranwal-9b2180340"><img src="assets/linkdin.png"
+                            alt="linkedin" class="iconimg"></a>
+                </span>
+            </div>
+
+
         </nav>
     </header>
     <main>
@@ -493,16 +558,33 @@
         </section>
         <hr>
         <section class="fourthsection">
-            <h2 class="tagnameofedu">Contact</h2>
-            <div class="contact">
-                connect with me
-                <input type="text" placeholder="Enter your Name">
-                <input type="text" placeholder="Enter your Email">
-                <textarea placeholder="Message"></textarea>
-                <button class="sendbtn">Send</button>
-            </div>
-        </section>
+            <div class="leftcontact">
+                <h2>Let's Connect</h2>
+                <p> <i class="fa-solid fa-paper-plane"></i>
+                    nehabaranwal841435@gmail.com</p>
+                <!-- <p>0123456789</p> -->
+                <div class="socialicon">
+                    <a href="https://github.com/Neha-one"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/neha-baranwal-9b2180340"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
 
+            </div>
+            <div class="rightcontact">
+                <h2 class="tagnameofedu">Contact</h2>
+                <form class="contact">
+                    connect with me
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="sendbtn">Send</button>
+                </form>
+            </div>
+
+        </section>
+        <footer>
+            <p> © 2026 Neha Kumari Baranwal. <i class="fa-solid fa-heart"></i> All Rights Reserved. </p>
+        </footer>
     </main>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script>
