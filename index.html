@@ -117,7 +117,7 @@
         .secondsection {
             max-width: 90vw;
             margin: auto;
-            height: 80vh;
+            /* height: 80vh; */
         }
 
         /* .secondsection h1 {
@@ -173,22 +173,22 @@
             margin-top: 50px;
         }
 
-        .frontendbox,
-        .backendbox,
-        .toolsbox,
-        .languagebox {
+        .skillsharebox {
             background-color: rgb(21, 21, 65);
             /* width: 45%; */
             margin: 10px;
             padding: 20px;
             box-sizing: border-box;
-
+            border-radius: 5px;
+            border: 2px solid rgb(61, 53, 104);
         }
 
-        .frontendbox li,
-        .backendbox li,
-        .toolsbox li,
-        .languagebox li {
+        .skillsharebox:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        .skillsharebox li {
             display: flex;
             align-items: center;
             border: 1px solid rgb(61, 53, 104);
@@ -205,9 +205,103 @@
             width: 38px;
             margin-right: 10px;
         }
-        .boxname{
+
+        .boxname {
             margin-bottom: 20px;
             text-align: center;
+        }
+
+        .skilltag {
+            text-align: center;
+            font-size: 40px;
+            /* letter-spacing: 4px; */
+            text-decoration: underline;
+            text-decoration-color: rgba(170, 160, 228, 0.251);
+            text-underline-offset: 10px;
+        }
+
+        .thirdsection {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .tagnameofedu {
+            text-align: center;
+            font-size: 40px;
+            /* letter-spacing: 4px; */
+            text-decoration: underline;
+            text-decoration-color: rgba(170, 160, 228, 0.251);
+            text-underline-offset: 10px;
+        }
+
+        .edubox {
+            width: 324px;
+            background-color: rgba(21, 21, 65, 0.479);
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid rgb(61, 53, 104);
+            border-radius: 5px;
+        }
+
+        .edubox:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        .interbox {
+            margin-left: 250px;
+        }
+
+        .clgname {
+            margin: 10px 0;
+            margin-bottom: 20px;
+            color: rgba(206, 206, 206, 0.736);
+        }
+
+        .classtag {
+            text-align: center;
+        }
+
+        .gradetag {
+            margin-bottom: 20px;
+        }
+
+        .fourthsection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            border: 2px solid rgb(150, 145, 178);
+            width: 400px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-radius: 5px;
+        }
+
+        .contact input {
+
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            /* border: none; */
+            background-color: rgba(21, 21, 65, 0.819);
+        }
+
+        .sendbtn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgba(21, 21, 65, 0.819);
+            color: white;
+
         }
     </style>
 </head>
@@ -293,9 +387,9 @@
             </div>
         </section> -->
         <section class="secondsection">
-            <h2>Skills</h2>
+            <h2 class="skilltag">Skills</h2>
             <div class="mainbox">
-                <div class="frontendbox">
+                <div class="frontendbox skillsharebox">
                     <h3 class="boxname">Frontend</h3>
                     <ul>
                         <li>
@@ -324,7 +418,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="backendbox">
+                <div class="backendbox skillsharebox">
                     <h3 class="boxname">Backend</h3>
 
                     <ul>
@@ -345,7 +439,7 @@
 
                     </ul>
                 </div>
-                <div class="toolsbox">
+                <div class="toolsbox skillsharebox">
                     <h3 class="boxname">Tools</h3>
 
                     <ul>
@@ -361,7 +455,7 @@
                         <li><img class="iconimg" src="assets/tools/npm.png" alt="">npm</li>
                     </ul>
                 </div>
-                <div class="languagebox">
+                <div class="languagebox skillsharebox">
                     <h3 class="boxname">Languages</h3>
 
                     <ul>
@@ -373,8 +467,42 @@
                     </ul>
                 </div>
             </div>
-
         </section>
+        <hr>
+        <section class="thirdsection">
+            <h2 class="tagnameofedu">Education</h2>
+            <div class="clgbox edubox">
+                <h2 class="classtag">B.Tech (CSE-AI)</h2>
+                <h3 class="clgname">Babu Banarasi Das University Lucknow</h3>
+                <h4 class="gradetag">Grade:9.33 CGPA</h4>
+                Pursuing B.Tech with a focus on software development, web technologies, data structures, and
+                problem-solving skills.
+            </div>
+            <div class="interbox edubox">
+                <h2 class="classtag">12th (BSEB)</h2>
+                <h3 class="clgname">Lok Manya Tilak High School Cum Inter College</h3>
+                <h4 class="gradetag">Grade:82.2%</h4>
+                Completed Higher Secondary Education with Physics, Chemistry, and Mathematics (PCM).
+            </div>
+            <div class="tenbox edubox">
+                <h2 class="classtag">10th (BSEB)</h2>
+                <h3 class="clgname">Lok Manya Tilak High School Cum Inter College</h3>
+                <h4 class="gradetag">Grade:90.8%</h4> Successfully completed Secondary School Education with a strong
+                academic foundation.
+            </div>
+        </section>
+        <hr>
+        <section class="fourthsection">
+            <h2 class="tagnameofedu">Contact</h2>
+            <div class="contact">
+                connect with me
+                <input type="text" placeholder="Enter your Name">
+                <input type="text" placeholder="Enter your Email">
+                <textarea placeholder="Message"></textarea>
+                <button class="sendbtn">Send</button>
+            </div>
+        </section>
+
     </main>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script>
