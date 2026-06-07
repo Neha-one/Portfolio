@@ -290,26 +290,15 @@ ul {
   margin-bottom: 20px;
 }
 
+/* --------------contact----------------- */
 .fourthsection {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 40px;
   max-width: 900px;
   margin: auto;
-  /* margin-top: 50px; */
   justify-content: space-around;
   align-items: flex-start;
-
-
-}
-
-.leftcontact {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  margin-top: 50px;
-
 }
 
 .contact {
@@ -322,6 +311,7 @@ ul {
   margin-top: 30px;
   padding-top: 20px;
   border-radius: 5px;
+  margin: 10px;
 }
 
 .contact input {
@@ -359,12 +349,21 @@ ul {
   transition: 0.3s;
 }
 
+.perinfo {
+  margin: 10px;
+  font-size: 10px;
+}
+
 /* ---------------footer---------------------- */
 footer {
   text-align: center;
   margin: 20px 0;
   color: rgb(150, 145, 178);
   font-size: 0.7rem;
+}
+
+.fa-heart {
+  color: red;
 }
 
 nav .fa-solid {
@@ -376,9 +375,6 @@ nav .fa-solid {
 /* ----------------css for media query---------------- */
 @media only screen and (max-width:600px) {
 
-  /* .left{
-    margin-right: 0;
-  } */
   .firstsection {
     flex-direction: column;
     gap: 20px;
@@ -404,11 +400,7 @@ nav .fa-solid {
     display: block;
   }
 
-  /* nav .fa-solid {
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-  } */
+
   nav .right {
     display: flex;
     justify-content: space-between;
